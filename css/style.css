@@ -1,3 +1,11 @@
+.bg-image {
+  background-image: url(tree.webp);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .banner {
     text-align: center;
     font-size: 6cap;
@@ -11,7 +19,8 @@
 
 body {
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    
   }
   
   .snowflakes {
@@ -25,9 +34,9 @@ body {
   
   .snowflake {
     position: absolute;
-    width: 20px; /* Set the width of the snowflake */
-    height: 20px; /* Set the height of the snowflake */
-    background-image: url('snowflake.webp'); /* Set the image path */
+    width: 20px;
+    height: 20px; 
+    background-image: url('snowflake.webp');
     background-size: cover;
     animation: snowfall linear infinite;
   }
@@ -167,21 +176,31 @@ body {
 
 /* tree -------------  */
 
-.tree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .tree {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
   
   .trunk {
     width: 20px;
     height: 50px;
     background-color: #8B4513;
+    margin-top: 20px;
+    z-index: 2;
   }
   
   .foliage {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-
   }
   
   .layer {
@@ -191,4 +210,5 @@ body {
     border-right: 30px solid transparent;
     border-bottom: 50px solid #228B22;
     margin: 3px;
+    z-index: 2;
   }
