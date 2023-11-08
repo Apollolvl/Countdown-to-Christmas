@@ -1,7 +1,7 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-image: url('background.avif');
+  background-image: url('pictures/background.avif');
   background-size: cover;
   background-color: whitesmoke;
 }
@@ -120,7 +120,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px; 
-    background-image: url('snowflake.webp');
+    background-image: url('pictures/snowflake.webp');
     background-size: cover;
     animation: snowfall linear infinite;
   }
