@@ -1,20 +1,23 @@
 <!doctype html>
-<html>
+
   <head>
     <title>Apollo's Website!</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <audio controls autoplay>
+      <source src="deck-the-halls-kevin-macleod-main-version-04-25-9985.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
   </head>
 
-  <body>
-    <div class="bg-image"></div>
-    
-    <header class="banner">
-        <h1>Countdown to Christmas</h1>
-    </header>
-    <body>
+  <body>  
+    <div class="background">
+      <div>
+        <header class="banner">
+           <h1 class="countdownText">Countdown to Christmas!</h1>
+        </header>
+      </div>
         <div class="snowflakes" aria-hidden="true">
           <div class="snowflake"></div>
           <div class="snowflake"></div>
@@ -42,19 +45,31 @@
           <div class="snowflake"></div>
           <div class="snowflake"></div>
           <!-- You can add more snowflakes here -->
-        </div>
-        <div class="tree">
-            <div class="trunk"></div>
-            <div class="foliage">
-              <div class="layer"></div>
-              <div class="layer"></div>
-              <div class="layer"></div>
-              <div class="layer"></div>
-              <div class="layer"></div>
-            </div>
-          </div>
+        </div>   
+      <div id="countdown">
+        <p>
+          
+          <span id="days" class="countdown-text">00</span>
+          <span class="countdown-text" class="wordDHMS">Days</span>
+      
+          <span id="hours" class="countdown-text">00</span>
+          <span class="countdown-text" class="wordDHMS"> Hours</span>
+          
+          <span id="minutes" class="countdown-text">00</span>
+          <span class="countdown-text" class="wordDHMS"> Minutes</span>
+          
+          <span id="seconds" class="countdown-text">00</span>
+          <span class="countdown-text" class="wordDHMS"> Seconds</span>
 
-        
+      </p>
+      <script src="script.js"></script>
+      </div>   
+
+      <img id="family"  src="css/family.jpeg" alt="picture of my family">
+      <img id="me"  src="css/me.jpeg" alt="picture of my family">
+      <img id="bridge"  src="css/bridge.jpeg" alt="picture of my family">
+      <img id="baby"  src="css/baby.jpeg" alt="picture of my family">
+
+    </div>      
   </body>
 
-</html>

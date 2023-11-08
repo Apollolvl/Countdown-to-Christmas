@@ -1,28 +1,112 @@
-.bg-image {
-  background-image: url(tree.webp);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+body {
+  margin: 0%;
+  padding: 0%;
+  background-image: url('background.avif');
   background-size: cover;
+  background-color: whitesmoke;
+}
+
+
+.timer {
+  display: inline-block;
+}
+
+
+#countdown {
+  margin: auto;
+  border: 10px;
+  width: 65%;
+  text-align: center;
+  margin-top: -3%;
+}
+
+#days {
+  margin-left: 3%;
+}
+
+#hours {
+  margin-left: 2%;
+}
+
+#minutes {
+  margin-left: 2%;
+}
+
+#seconds {
+  margin-left: 2%;
 }
 
 .banner {
     text-align: center;
-    font-size: 6cap;
+    font-size: 3cap;
     border: 10px;
-    border-color: black;
-    border-style: dashed;
-    background: rgb(50,50,49);
-    background: linear-gradient(90deg, rgba(50,50,49,1) 0%, rgba(145,143,140,1) 25%, rgba(189,186,181,1) 50%, rgba(145,143,140,1) 75%, rgba(50,50,49,1) 100%);
-    height: auto;
+    color: darkred;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    
+.countdown-text {
+  font-size: 6cap;
+  display: inline-block;
+  color: darkred;
+}
+
+
+#family {
+  width: 19%;
+  border: 5px;
+  border-color: black;
+  border-style: groove;
+  position: absolute;
+  right: 48%;
+}
+
+#me {
+  width: 15%;
+  border: 5px;
+  border-color: black;
+  border-style: groove;
+  position: absolute;
+  right: 3%;
+  transform: rotate(15deg);
+  margin-top: 10%;
+}
+
+#bridge {
+  width: 15%;
+  border: 5px;
+  border-color: black;
+  border-style: groove;
+  position: absolute;
+  transform: rotate(-15deg);
+  left: 3%;
+  margin-top: 10%;
+}
+
+#baby {
+  width: 15%;
+  border: 5px;
+  border-color: black;
+  border-style: groove;
+  position: absolute;
+  right: 32%;
+}
+
+@keyframes scaleUp {
+  0%, 100% {
+      transform: scale(1);
   }
-  
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+.animate-change {
+  animation: scaleUp 0.5s;
+}
+
+.wordDHMS {
+  margin-right: 10%;
+}
+
   .snowflakes {
     position: fixed;
     top: 0;
@@ -172,43 +256,4 @@ body {
   .snowflake:nth-child(25) {
     left: 48%;
     animation-duration: 35s;
-  }
-
-/* tree -------------  */
-
-.content {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .tree {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
-  
-  .trunk {
-    width: 20px;
-    height: 50px;
-    background-color: #8B4513;
-    margin-top: 20px;
-    z-index: 2;
-  }
-  
-  .foliage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .layer {
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 50px solid #228B22;
-    margin: 3px;
-    z-index: 2;
   }
